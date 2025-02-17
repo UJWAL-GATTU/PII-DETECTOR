@@ -1,0 +1,80 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('/home/rguktrkvalley/SIH_ENHANCED2/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(240, 240, 240, 0.8);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    resize: none;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+    transform: scale(1.05);
+}
+
+video, canvas {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    textarea {
+        height: 200px;
+    }
+}
+
+@media (max-width: 425px) {
+    textarea {
+        height: 150px;
+    }
+
+/* Highlight PII */
+.highlight-pii {
+    background-color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+

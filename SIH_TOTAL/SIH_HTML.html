@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PII Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@v4.0.2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <!-- Main Application Section -->
+    <section class="app-container">
+        <h1>PII Detection and Masking</h1>
+
+        <!-- File Upload Section -->
+        <section id="upload-section">
+            <h2>Upload a Document</h2>
+            <input type="file" id="file-input" accept="image/*,application/pdf" />
+            <br>
+            <div class="button-container">
+                <button id="process-upload">Process Uploaded File</button>
+            </div>
+        </section>
+
+        <!-- Camera Capture Section -->
+        <section id="camera-section">
+            <h2>Capture Document from Camera</h2>
+            <video id="video" width="640" height="480" autoplay></video>
+            <br>
+            <div class="button-container">
+                <button id="snap">Capture</button>
+            </div>
+            <canvas id="canvas" width="640" height="480"></canvas>
+            <br>
+            <div class="button-container">
+                <button id="process-camera">Process Captured Image</button>
+            </div>
+        </section>
+
+        <!-- Text Preview Section -->
+        <section id="text-preview-section">
+            <h2>Preview and Edit Text</h2>
+            <textarea id="text-preview" rows="10"></textarea>
+            <br>
+            <div class="button-container">
+                <button id="confirm-edit">Confirm & Mask PII</button>
+            </div>
+        </section>
+
+        <!-- Download Options Section -->
+        <section id="download-section">
+            <h2>Download Masked Document</h2>
+            <label><input type="checkbox" id="format-pdf"> PDF</label>
+            <label><input type="checkbox" id="format-doc"> DOC</label>
+            <label><input type="checkbox" id="format-html"> HTML</label>
+            <br>
+            <div class="button-container">
+                <button id="download-button">Download</button>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Scrolling Tips Section -->
+    <div id="scrolling-tips">
+        TIP: Ensure you review the document for any missed PII before downloading.
+    </div>
+
+    <script src="SIH_JS.js"></script>
+</body>
+</html>
+
