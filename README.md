@@ -73,9 +73,17 @@ The **PII Detection Web Application** is a privacy-focused tool designed to dete
 
 ---
 
+### Note : As this is my SIH project i haven't included the requirements file so male sure you download everything needed so that everything can run smoothly .
+
+### The file with ppppp.html is the main file for the website in this website we will be having sections like Home,PII detected,Contact,etc As this project still needs many developments i assure that i will make necessary changes for my website and reshape it to it's best .
+### To get Started click the START button and you can take a live photo or you can upload the document of which content you need to get maksed after uploading you will be given a text output file with important details getting masked in future i will develope this project where it can directly mask the content on the file itself .
+### Note : Make sure you use a Camera of good quality while taking a real time photo as the regex patterns may throw errors for blurry images .
+
 ## 🛠 Installation & Setup
 
 ### 1️⃣ **Clone the Repository**
 ```bash
 git clone https://github.com/UJWAL-GATTU/PII-DETECTOR
-cd PII-DETECTOR '''
+cd PII-DETECTOR
+
+
