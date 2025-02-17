@@ -77,5 +77,5 @@ The **PII Detection Web Application** is a privacy-focused tool designed to dete
 
 ### 1️⃣ **Clone the Repository**
 ```bash
-git clone https://github.com/your-username/pii-detection-web-app.git
-cd pii-detection-web-app
+git clone https://github.com/UJWAL-GATTU/PII-DETECTOR
+cd PII-DETECTOR '''
